@@ -160,4 +160,4 @@ Crux是一个实用工具函数集合，为了提高使用Emacs编辑器时的�
 | crux-kill-other-buffers | C-x K |
 | crux-smart-kill-line | C-k |
 
- ### .emacs.d/elisp/init-avy.el
+ ### .emacs.d/elisp/init-.el
