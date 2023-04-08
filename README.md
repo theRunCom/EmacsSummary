@@ -87,3 +87,49 @@ emacs -nw # no window system
 | 列出含某一关键词的命令 | C-h a | apropos-command |
 | 列出含某一关键词的符号的文档 | C-h d | apropos-documentation |
 | 帮助的帮助 | C-h ? | help-for-help |
+
+## 关于M-EMACS
+
+M-EMACS 是一个自定义的 GNU Emacs 安装和配置分发版本，旨在增强默认的 Emacs 使用体验。
+
+### .emacs.d/early-init.el
+
+early-init.el 是在 init.el 等文件之前运行的文件。作者这里为了运行的速度，进行了一些优化，设置了垃圾回收gc的阈值及关闭一些不必要的功能。
+
+### .emacs.d/init.el
+
+Emacs在启动时会加载init.el文件，并根据其中的配置进行初始化。
+
+### .emacs.d/elisp/init-package.el
+
+- 将镜像源进行修改，获取更快的下载速度。
+```elisp
+(setq package-user-dir (expand-file-name "elpa" user-emacs-directory)
+      package-archives
+      '(;;("gnu"   . "https://elpa.gnu.org/packages/")
+        ;;("melpa" . "https://melpa.org/packages/")
+        ("cselpa" . "https://elpa.thecybershadow.net/packages/")
+        ("melpa-cn" . "http://mirrors.cloud.tencent.com/elpa/melpa/")
+        ("gnu-cn"   . "http://mirrors.cloud.tencent.com/elpa/gnu/")
+        ))
+```
+
+- 添加代理(更换对应的地址与端口)：
+```elisp
+;; (setq url-proxy-services
+         ;; '(("http"  . "172.24.64.1:7890")
+    	;; ("https" . "172.24.64.1:7890")))
+
+```
+
+- 使用[use-package](https://github.com/jwiegley/use-package)进行包管理
+
+- 包自动更新
+
+- 从 mode-line 中去除某些次要模式
+
+### .emacs.d/elisp/init-avy.el
+
+Avy是Emacs编辑器中一个快速跳转工具。它可以帮助用户快速浏览和跳转到文本缓冲区中的某个位置，从而提高编辑效率。Avy可以将全局的跳转操作对应到一个速记选择器（shortcut），然后通过选择对应的速记选择器，快速移动到缓冲区中的相应位置。
+
+| 
