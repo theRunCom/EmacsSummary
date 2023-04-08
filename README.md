@@ -132,4 +132,32 @@ Emacs在启动时会加载init.el文件，并根据其中的配置进行初始�
 
 Avy是Emacs编辑器中一个快速跳转工具。它可以帮助用户快速浏览和跳转到文本缓冲区中的某个位置，从而提高编辑效率。Avy可以将全局的跳转操作对应到一个速记选择器（shortcut），然后通过选择对应的速记选择器，快速移动到缓冲区中的相应位置。
 
-| 
+- avy-goto-char-timer 的作用是快速跳转到当前编辑文本中某个字符出现的位置。它和avy-goto-char 类似，但它会在按下按键后自动进入计时模式，列出候选项并根据您输入的字符筛选缩小候选项范围，当计时器到达 Timeout 时间时就会自动跳转。
+
+- avy-goto-line 的作用是快速跳转到文本的某一行。它使用类似于上面的命令，但是不是输入字符，而是输入行号。此命令可以在当前缓冲区中快速跳转到指定行，并可以缩小可能的行号。这在编辑大型文本文件时特别有用。
+
+| 功能 | 按键 |
+| --- | --- |
+| avy-goto-char-timer | C-z c |
+| avy-goto-line | C-z l |
+
+### .emacs.d/elisp/init-avy.el
+
+Crux是一个实用工具函数集合，为了提高使用Emacs编辑器时的效率而构建。
+
+- crux-move-beginning-of-line 函数使光标在当前行的开头和第一次调用之间切换。如果光标已经在行的开头，则将其移动到原始光标位置之前的非空字符。
+
+- crux-transpose-windows 函数使当前窗口与其旁边的窗口直接的文本互换。
+
+- crux-kill-other-buffers 函数关闭所有缓冲区，并且保留当前活动缓冲区。当您需要关闭Emacs中打开的所有文件时，这非常有用。注意，它不关闭任何Emacs的Minibuffer。
+
+- crux-cleanup-buffer-or-region：删除空行、行尾空格以及注释、多余的空行等，进行编码格式化。
+
+| 功能 | 按键 |
+| --- | --- |
+| crux-move-beginning-of-line | C-a |
+| crux-transpose-windows | C-x 4 t |
+| crux-kill-other-buffers | C-x K |
+| crux-smart-kill-line | C-k |
+
+ ### .emacs.d/elisp/init-avy.el
