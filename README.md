@@ -141,7 +141,7 @@ Avy是Emacs编辑器中一个快速跳转工具。它可以帮助用户快速浏
 | avy-goto-char-timer | C-z c |
 | avy-goto-line | C-z l |
 
-### .emacs.d/elisp/init-avy.el
+### .emacs.d/elisp/init-crux.el
 
 Crux是一个实用工具函数集合，为了提高使用Emacs编辑器时的效率而构建。
 
@@ -160,4 +160,25 @@ Crux是一个实用工具函数集合，为了提高使用Emacs编辑器时的�
 | crux-kill-other-buffers | C-x K |
 | crux-smart-kill-line | C-k |
 
- ### .emacs.d/elisp/init-.el
+ ### .emacs.d/elisp/init-dired.el
+
+ Dired是Emacs中的一个模式，它允许您浏览和管理文件系统。您可以使用Dired执行各种文件管理操作，如复制、移动、删除和重命名文件。
+
+ - dired-jump: 快速跳转到当前文件所在的目录。
+
+| 功能 | 按键 |
+| --- | --- |
+| dired-jump | C-x C-j | 
+
+Dired模式:
+| 功能 | 按键 |
+| --- | --- |
+| 打开鼠标指针指向的文件或目录 | <mouse-2> |
+| 打开所选文件或目录 | RET |
+| 执行返回上一级目录的操作 | ^ |
+
+Disk Usage,是一种文件系统分析工具，提供按大小排序的文件列表表格视图。
+
+| 功能 | 按键 |
+| --- | --- |
+|  save-all-buffers | C-x C-s |
