@@ -22,6 +22,14 @@ emacs
 emacs -nw # no window system
 ```
 
+## Emacs学习资料
+
+[org-mode简明教程笔记](https://github.com/EvanMeek/Learn-Org/blob/master/org-note.org)
+
+[Emacs Lisp 简明教程](http://smacs.github.io/elisp/)
+
+[配置指南](https://nyk.ma/posts/emacs-write-your-own/)
+
 ## 关于键盘操作
 
 | Emacs 功能键 | 缩写 | 对应键盘按键(PC/Mac) |
