@@ -30,6 +30,10 @@ emacs -nw # no window system
 
 [配置指南](https://nyk.ma/posts/emacs-write-your-own/)
 
+[Emacs Markdown-mode Cheat Sheet](https://cheatography.com/xaon/cheat-sheets/emacs-markdown-mode/)
+
+
+
 ## 关于键盘操作
 
 | Emacs 功能键 | 缩写 | 对应键盘按键(PC/Mac) |
