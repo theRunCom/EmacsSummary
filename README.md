@@ -194,3 +194,35 @@ Disk Usage,是一种文件系统分析工具，提供按大小排序的文件列
 | 功能 | 按键 |
 | --- | --- |
 |  save-all-buffers | C-x C-s |
+
+### .emacs.d/elisp/init-winner.el
+
+winner允许您轻松切换窗口的大小和位置，以及撤消窗口分割等操作。winner 的工作原理类似于后退和前进浏览器的历史记录。在此基础上，它允许您定义哪些 Buffer 不会导致新的窗口布局被记录，从而帮助您获得更好的 Buffers 管理。
+
+### .emacs.d/elisp/init-which-key.el
+
+which key可以在您当前输入的不完整命令（前缀）后显示按键绑定。
+
+### .emacs.d/elisp/init-popup-kill-ring.el
+
+popup-kill-ring，它用于显示 Emacs 中所有剪贴板历史记录的列表，并允许用户选择要粘贴的剪贴板内容。这些历史记录包括之前复制或剪切的所有文本或图像，而不仅仅是最新的一次复制或剪切。
+
+| 功能 | 按键 |
+| --- | --- |
+| popup-kill-ring | M-y |
+
+### .emacs.d/elisp/init-undo-tree.el
+
+undo-tree-visualizer-diff，允许您在撤消/重做树的可视化视图中看到不同版本之间的差异。
+
+undo-tree-history-directory-alist，设置为一个由一个 key-value 对组成的链表，其中的 key 可以是用来匹配文件名，value 表示撤消历史文件保存的目录。
+
+undo-tree-visualizer-timestamps，允许您在撤销/重做树的可视化视图中看到每个撤销/重做历史条目的时间戳信息。
+
+### .emacs.d/elisp/init-discover-my-major.el
+
+discover-my-major，提供了一种方便的方式来查看当前 Emacs 所支持的所有主要模式。
+
+| 功能 | 按键 |
+| --- | --- |
+| discover-my-major | C-h C-m |
