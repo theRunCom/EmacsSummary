@@ -226,3 +226,54 @@ discover-my-major，提供了一种方便的方式来查看当前 Emacs 所支�
 | 功能 | 按键 |
 | --- | --- |
 | discover-my-major | C-h C-m |
+
+### .emacs.d/elisp/init-ace-window.el
+
+ace-window，选择要切换的窗口
+
+| 功能 | 按键 |
+| --- | --- |
+| ace-window | C-x C-o |
+
+### .emacs.d/elisp/init-shell.el
+
+关于终端使用
+
+term-interrupt-subjob：用于终止当前的子进程
+term-send-esc：用于将通常用于触发 Meta 命令的 ESC 键发送到终端
+previous-line：在终端中向上滚动一行
+next-line：在终端中向下滚动一行
+term-send-return：发送回车符
+term-paste：将剪贴板中的内容粘贴到终端
+scroll-up-command：向上滚动终端
+scroll-down-command：向下滚动终端
+term-send-forward-word：向前跳到下一个单词
+term-send-backward-word：向后跳到上一个单词
+term-send-backspace：向后删除一个字符
+term-send-up：向上滚动终端历史记录
+term-send-down：向下滚动终端历史记录
+term-send-forward-kill-word：删除当前光标位置到下一个单词的内容
+term-send-backward-kill-word：删除当前光标位置到上一个单词的内容
+term-send-reverse-search-history：向上搜索匹配的历史记录项
+term-send-delete-word：删除当前光标位置到下一个单词的内容
+term-send-raw：将当前按键发送到终端
+comint-dynamic-complete：自动完成终端命令
+
+| 功能 | 按键 |
+| --- | --- |
+| aweshell | M-# |
+| shell-here | M-~ |
+| multi-term | M-$ |
+| multi-term-term-interrupt-subjob | C-c C-c |
+| multi-term-term-send-esc | C-c C-e |
+| multi-term-previous-line | C-p |
+| multi-term-next-line | C-n |
+| multi-term-term-send-return | C-m |
+| multi-term-term-paste | C-y |
+| multi-term-scroll-up-command | C-v |
+| multi-term-scroll-down-command | M-v |
+| multi-term-term-send-forward-word | M-f |
+| multi-term-term-send-backward-word | M-b |
+| multi-term-term-send-backspace | M-o |
+| multi-term-term-send-up | M-p |
+| multi-term- |  |
