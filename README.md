@@ -240,23 +240,41 @@ ace-window，选择要切换的窗口
 关于终端使用
 
 term-interrupt-subjob：用于终止当前的子进程
+
 term-send-esc：用于将通常用于触发 Meta 命令的 ESC 键发送到终端
+
 previous-line：在终端中向上滚动一行
+
 next-line：在终端中向下滚动一行
+
 term-send-return：发送回车符
+
 term-paste：将剪贴板中的内容粘贴到终端
+
 scroll-up-command：向上滚动终端
+
 scroll-down-command：向下滚动终端
+
 term-send-forward-word：向前跳到下一个单词
+
 term-send-backward-word：向后跳到上一个单词
+
 term-send-backspace：向后删除一个字符
+
 term-send-up：向上滚动终端历史记录
+
 term-send-down：向下滚动终端历史记录
+
 term-send-forward-kill-word：删除当前光标位置到下一个单词的内容
+
 term-send-backward-kill-word：删除当前光标位置到上一个单词的内容
+
 term-send-reverse-search-history：向上搜索匹配的历史记录项
+
 term-send-delete-word：删除当前光标位置到下一个单词的内容
+
 term-send-raw：将当前按键发送到终端
+
 comint-dynamic-complete：自动完成终端命令
 
 | 功能 | 按键 |
