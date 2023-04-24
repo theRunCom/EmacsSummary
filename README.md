@@ -303,3 +303,9 @@ comint-dynamic-complete：自动完成终端命令
 | multi-term-term-send-delete-word | M-d |
 | multi-term-term-send-raw | M-, |
 | multi-term-comint-dynamic-complete | M-. |
+
+### .emacs.d/elisp/init-buffer.el
+
+| 功能 | 按键 |
+| --- | --- |
+| 打开ibuffer | C-x C-b |
