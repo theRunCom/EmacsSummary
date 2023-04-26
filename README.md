@@ -333,3 +333,17 @@ comint-dynamic-complete：自动完成终端命令
 | --- | --- |
 | edit-configs | C-z e |
 
+### .emacs.d/elisp/init-theme.el
+
+Doom Themes 和 Doom Modeline 相关配置
+
+### .emacs.d/elisp/init-dashboard.el
+
+Dashboard 启动面板
+
+| 功能 | 按键 |
+| --- | --- |
+| open-dashboard | C-z d |
+
+Page Break Lines 该插件能将丑陋的分页符字符显示为整洁的横线
+
