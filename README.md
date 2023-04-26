@@ -309,3 +309,27 @@ comint-dynamic-complete：自动完成终端命令
 | 功能 | 按键 |
 | --- | --- |
 | 打开ibuffer | C-x C-b |
+
+### .emacs.d/elisp/init-func.el
+
+调整窗口宽度/高度
+
+| 功能 | 按键 |
+| --- | --- |
+| resize-window-width | C-z w |
+| resize-window-height | C-z h |
+| window-width-increase | M-W = |
+| window-width-increase | M-W M-+ |
+| window-width-decrease | M-W - |
+| window-width-decrease | M-W M-_ |
+| window-height-increase | M-E = |
+| window-height-increase | M-E M-+ |
+| window-height-decrease | M-E - |
+| window-height-decrease | M-E M-_ |
+
+编辑此配置文件的快捷方式
+
+| 功能 | 按键 |
+| --- | --- |
+| edit-configs | C-z e |
+
