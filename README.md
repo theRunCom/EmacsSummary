@@ -297,8 +297,8 @@ comint-dynamic-complete：自动完成终端命令
 | multi-term-term-send-down | M-n |
 | multi-term-term-send-forward-kill-word | M-M |
 | multi-term-term-send-backward-kill-word | M-N |
-| multi-term-term-send-backward-kill-word | <C-backspace> |
-| multi-term-term-send-backward-kill-word | <M-backspace> |
+| multi-term-term-send-backward-kill-word | < C-backspace > |
+| multi-term-term-send-backward-kill-word | < M-backspace > |
 | multi-term-term-send-reverse-search-history | M-r |
 | multi-term-term-send-delete-word | M-d |
 | multi-term-term-send-raw | M-, |
