@@ -347,3 +347,22 @@ Dashboard 启动面板
 
 Page Break Lines 该插件能将丑陋的分页符字符显示为整洁的横线
 
+### .emacs.d/elisp/init-magit.el
+
+Magit是一个Emacs的Git客户端，它提供了一种更好的方式来使用Git。Magit提供了一个交互式的界面，可以让你更容易地查看和管理你的Git存储库。Magit还提供了一些有用的功能，例如在提交之前查看差异，合并分支，重置提交等
+
+| 功能 | 按键 |
+| --- | --- |
+| magit-status | C-x g |
+| magit-diff-visit-file-other-window | M-RET |
+
+### .emacs.d/elisp/init-projectile.el
+
+Projectile是一个Emacs的插件，它提供了项目管理的功能，可以让你在一个项目中快速地切换文件，查找文件，以及在项目中执行命令。它可以自动地识别项目的根目录，并且可以在项目中搜索文件，而不需要你手动指定根目录。
+
+projectile-command-map: 打开 Projectile 的命令列表
+
+| 功能 | 按键 |
+| --- | --- |
+| projectile-command-map | C-c p |
+
