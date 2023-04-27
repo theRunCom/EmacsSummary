@@ -366,3 +366,30 @@ projectile-command-map: 打开 Projectile 的命令列表
 | --- | --- |
 | projectile-command-map | C-c p |
 
+### .emacs.d/elisp/init-yasnippet.el
+
+YASnippet是一个用于Emacs的模板系统，它可以让你在编写代码时快速输入常用的代码块。例如，你可以定义一个模板，当你输入“for”时，它会自动展开为一个for循环的代码块。YASnippet还支持变量和嵌套代码块，这使得它非常灵活和强大
+
+| 功能 | 按键 |
+| --- | --- |
+| yas-expand-from-trigger-key | C-c C-n |
+
+### .emacs.d/elisp/init-syntax.el
+
+Flycheck是一个Emacs的语法检查工具，它可以在你编辑代码时自动检查语法错误，并在编辑器中显示错误信息。
+
+Flyspell是一个Emacs的拼写检查工具，它可以在你编辑代码时自动检查拼写错误，并在编辑器中显示错误信息。
+
+### .emacs.d/elisp/init-dump-jump.el
+
+Dumb Jump--"jump to definition" 
+
+dumb-jump-go 命令用于跳转到光标下的定义位置。如果有多个定义位置，可以使用 dumb-jump-selector 指定选择器选择具体的跳转目标。
+dumb-jump-go-other-window 命令与 dumb-jump-go 命令类似，不同的是跳转到的位置会在新的窗口中打开。
+dumb-jump-go-prompt 命令用于在 minibuffer 中提示用户输入要跳转的符号名称，然后跳转到该名称的定义位置。
+
+| 功能 | 按键 |
+| --- | --- |
+| dumb-jump-go-other-window | C-c C-o |
+| dumb-jump-go | C-c C-j |
+| dumb-jump-go-prompt | C-c C-i |
