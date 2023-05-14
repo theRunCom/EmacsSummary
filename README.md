@@ -384,12 +384,80 @@ Flyspell是一个Emacs的拼写检查工具，它可以在你编辑代码时自�
 
 Dumb Jump--"jump to definition" 
 
-dumb-jump-go 命令用于跳转到光标下的定义位置。如果有多个定义位置，可以使用 dumb-jump-selector 指定选择器选择具体的跳转目标。
-dumb-jump-go-other-window 命令与 dumb-jump-go 命令类似，不同的是跳转到的位置会在新的窗口中打开。
-dumb-jump-go-prompt 命令用于在 minibuffer 中提示用户输入要跳转的符号名称，然后跳转到该名称的定义位置。
+- dumb-jump-go 命令用于跳转到光标下的定义位置。如果有多个定义位置，可以使用 dumb-jump-selector 指定选择器选择具体的跳转目标。
+- dumb-jump-go-other-window 命令与 dumb-jump-go 命令类似，不同的是跳转到的位置会在新的窗口中打开。
+- dumb-jump-go-prompt 命令用于在 minibuffer 中提示用户输入要跳转的符号名称，然后跳转到该名称的定义位置。
 
 | 功能 | 按键 |
 | --- | --- |
 | dumb-jump-go-other-window | C-c C-o |
 | dumb-jump-go | C-c C-j |
 | dumb-jump-go-prompt | C-c C-i |
+
+### .emacs.d/elisp/init-parens.el
+
+Smartparens 处理pairs
+
+- sp-forward-sexp，将光标向前移动到当前平衡表达式（sexp）的末尾。如果光标已经在当前sexp的末尾，则将光标移动到下一个sexp的末尾。
+- sp-backward-sexp，将光标向后移动到当前平衡表达式的开头。如果光标已经在当前sexp的开头，则将光标移动到上一个sexp的开头。
+- sp-backward-down-sexp，将光标向后移动到当前sexp的外层sexp的开头。
+- sp-up-sexp，将光标向后移动到当前sexp的外层sexp的末尾。
+- sp-copy-sexp，将当前sexp复制到剪贴板。
+- sp-change-enclosing，用另一对括号（或其他字符）替换当前sexp的括号。
+- sp-kill-sexp，删除当前sexp。
+- sp-splice-sexp-killing-backward，将当前sexp和前一个sexp合并在一起，并删除前一个sexp的括号。
+- sp-splice-sexp-killing-around，将当前sexp和它的外层sexp合并在一起，并删除它的外层括号。
+- sp-select-next-thing-exchange，选择下一个括号、引号或其他字符，并将其与当前sexp交换位置。 
+
+| 功能 | 按键 |
+| --- | --- |
+| sp-forward-sexp | C-M-f |
+| sp-backward-sexp | C-M-b |
+| sp-up-sexp | C-M-e |
+| sp-backward-down-sexp | C-M-a |
+| sp-copy-sexp | C-M-w |
+| sp-change-enclosing | C-M-k |
+| sp-kill-sexp | M-k |
+| sp-splice-sexp-killing-backward | C-M-< backspace > |
+| sp-splice-sexp-killing-around | C-S-< backspace > | 
+| sp-select-next-thing-exchange | C-] |
+
+Match Parenthesis 自动匹配括号
+
+### .emacs.d/elisp/init-indent.el
+
+Highlight Indent Guides 高亮缩进级别
+
+### .emacs.d/elisp/init-quickrun.el
+
+Quickrun 快速编译和运行源代码
+
+| 功能 | 按键 |
+| --- | --- |
+| quickrun | < f5 > 或 C-c e |
+| quickrun-shell | M-< f5 > 或 C-c C-e |
+
+### .emacs.d/elisp/init-format.el
+
+Format all, auto-format source code
+
+[Supported Languages](https://github.com/lassik/emacs-format-all-the-code#supported-languages)
+
+| 功能 | 按键 |
+| --- | --- |
+| format-all-buffer | C-c C-f |
+
+Ediff, 对比和合并工具。它可以对比并编辑两个文件之间的差异,也可以三向对比多个文件。
+
+`M-x ediff`
+
+Evil Nerd Commenter，一种帮助您高效注释代码的工具。
+
+- c-toggle-comment-style，切换注释风格
+
+- evilnc-comment-or-uncomment-lines，either comment or uncomment the selected line
+
+| 功能 | 按键 |
+| --- | --- |
+| c-toggle-comment-style | C-c M-; |
+| evilnc-comment-or-uncomment-lines | M-; |
