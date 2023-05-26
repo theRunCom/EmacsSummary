@@ -518,3 +518,11 @@ a Jupyter (formerly IPython) client in Emacs.
 | ein:worksheet-execute-cell | C-c e |
 | ein:worksheet-execute-all-cells | C-c C-e |
 
+### .emacs.d/elisp/init-lsp.el
+
+### .emacs.d/elisp/init-company.el
+
+Company是一款Emacs的文本自动填充框架。
+
+Company TabNine，是支持所有语言自动补全的TabNine的company-mode后端。
+
