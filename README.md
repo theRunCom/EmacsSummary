@@ -461,3 +461,60 @@ Evil Nerd Commenter，一种帮助您高效注释代码的工具。
 | --- | --- |
 | c-toggle-comment-style | C-c M-; |
 | evilnc-comment-or-uncomment-lines | M-; |
+
+### .emacs.d/elisp/init-edit.el
+
+Iedit是一种次要模式，可以在缓冲区或区域中同时编辑多个区域。
+
+| 功能 | 按键 |
+| --- | --- |
+| iedit-mode | C-z |
+
+Awesome Pair可以提供语法括号自动补全。
+
+- awesome-pair-kill，如果光标在两个括号之间，如此：(光标)，调用 awesome-pair-kill 将删除两个括号并使光标变为空。如果光标在任何括号之外，调用 awesome-pair-kill 将简单地删除光标下的字符。
+
+- awesome-pair-space，插入一个空格字符并自动添加相应的括号或引号对。
+
+- awesome-pair-equal，插入一个等号 "=" 字符并自动添加相应的括号或引号对。
+
+- awesome-pair-jump-right，将使光标向右移动到下一个括号、方括号或引号对的右侧。
+
+- awesome-pair-jump-left，将使光标向左移动到上一个括号、方括号或引号对的左侧。
+
+| 功能 | 按键 |
+| --- | --- |
+| awesome-pair-kill | M-D |
+| awesome-pair-space | SPC |
+| awesome-pair-equal | = |
+| awesome-pair-jump-right | M-F |
+| awesome-pair-jump-left | M-B |
+
+Delete Block，有效快速删除块的功能。
+
+- delete-block-forward，删除光标所在位置到下一个空行或代码块结束位置的所有内容。
+
+- delete-block-backward，删除光标所在位置到上一个空行或代码块开始位置的所有内容。
+
+| 功能 | 按键 |
+| --- | --- |
+| delete-block-forward | M-d |
+| delete-block-backward | C-< backspace > or M-< backspace > or M-DEL |
+
+### .emacs.d/elisp/init-header.el
+
+Header2，用于创建和更新文件头的支持。在 Emacs Lisp 编程模式下自动添加文件头部信息。
+
+### .emacs.d/elisp/init-ein.el
+
+a Jupyter (formerly IPython) client in Emacs.
+
+- Execute M-x ein:run to launch a local Jupyter session
+
+- Login with M-x ein:login to a local or remote session
+
+| 功能 | 按键 |
+| --- | --- |
+| ein:worksheet-execute-cell | C-c e |
+| ein:worksheet-execute-all-cells | C-c C-e |
+
